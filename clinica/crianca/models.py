@@ -20,7 +20,7 @@ class Crianca(models.Model):
     # Endereço da Família
     rua = models.CharField(max_length=30, null=True)
     bairro = models.CharField(max_length=30, null=True)
-    cep = models.CharField(max_length=10, null=True)
+    cep = models.CharField(max_length=10, null=True, blank=True)
     cidade = models.CharField(max_length=20, null=True)
     estado = models.CharField(max_length=30, null=True,
                               choices=ESTADO_CHOICES)
