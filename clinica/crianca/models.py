@@ -24,7 +24,7 @@ class Crianca(models.Model):
     cidade = models.CharField(max_length=20, null=True)
     estado = models.CharField(max_length=30, null=True,
                               choices=ESTADO_CHOICES)
-    zona = models.CharField(max_length=10, null=True, blank=True,
+    zona = models.CharField(max_length=12, null=True, blank=True,
                             choices=ZONA_CHOICES)
 
     # Dados Redes Sociais
