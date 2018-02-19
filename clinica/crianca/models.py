@@ -60,8 +60,7 @@ class Crianca(models.Model):
         blank=True, null=True, default=9)
     nasceu_tempo_semanas = models.PositiveIntegerField(
         blank=True, null=True, default=40)
-    peso_ao_nascer = models.CharField(max_length=30,
-                                      choices=PESO_AO_NASCER_CHOICES)
+    peso_ao_nascer = models.FloatField(null=True)
     visita_prenatal = models.CharField(max_length=100,
                                        choices=VISITAS_PRENATAL_CHOICES)
 
